@@ -1,0 +1,75 @@
+--2024-07-08 12:39:00--  http://click/
+Resolving click (click)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘click’
+--2024-07-08 12:39:00--  http://here/
+Resolving here (here)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘here’
+--2024-07-08 12:39:00--  http://to/
+Resolving to (to)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘to’
+--2024-07-08 12:39:01--  http://download/
+Resolving download (download)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘download’
+--2024-07-08 12:39:01--  http://the/
+Resolving the (the)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘the’
+--2024-07-08 12:39:01--  http://project/
+Resolving project (project)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘project’
+--2024-07-08 12:39:01--  http://1/
+Resolving 1 (1)... 0.0.0.1
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:41:15--  (try: 2)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:43:31--  (try: 3)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:45:50--  (try: 4)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:48:08--  (try: 5)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:50:28--  (try: 6)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:52:48--  (try: 7)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:55:09--  (try: 8)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:57:31--  (try: 9)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 12:59:53--  (try:10)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 13:02:18--  (try:11)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 13:04:41--  (try:12)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Connection timed out.
+Retrying.
+
+--2024-07-08 13:07:04--  (try:13)  http://1/
+Connecting to 1 (1)|0.0.0.1|:80... failed: Network is unreachable.
+--2024-07-08 13:17:43--  http://data/
+Resolving data (data)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘data’
+--2024-07-08 13:17:43--  http://files/
+Resolving files (files)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘files’

@@ -1,0 +1,22 @@
+question 1:	221372 # correct 
+question 2: 	cut -f 7 athal_wu_0_A_view.txt | sort | uniq -c # 65521 
+question 3	samtools view athal_wu_0_A.sam | cut -f 6 | grep 'D' -c  = 2451 # correct 
+question 4: 	cut -f 7 athal_wu_0_A_view.txt | sort | uniq -c # 150913  
+question 5:	samtools view athal_wu_0_A.sam | cut -f 6 | grep 'N' -c = 0 # correct 
+question 6: 	samtools flagstat chr3.sam # correct #7081
+question 7:	cut -f 7 chr3_view.txt | sort | uniq -c # 1983
+question 8:	samtools view chr3.sam | cut -f 6 | grep 'D' -c  # 31 correct 
+question 9: 	cut -f 7 chr3_view.txt | sort | uniq -c # 4670 
+question 10: 	0 #correct 
+question 11: 	samtools view -H athal_wu_0_A.bam # 7 
+question 12: 	samtools view -H athal_wu_0_A.bam # 29923332
+question 13:	samtools view -H athal_wu_0_A.bam # stampy
+question 14:	samtools view athal_wu_0_A.bam | head -100 | cut -f 1-8 # GAII05_0002:1:113:7822:3886#0
+question 15: 	samtools view athal_wu_0_A.bam | head -100 | cut -f 1-8 # Chr3:11700332
+question 16: 	bedtools intersect -wo -bed -a chr3.bam -b athal_wu_0_A_annot.gtf >chr3_intersect2.txt #3101
+question 17: 	cut -f 22- chr3_intersect2.txt | awk '$1 > 9' | wc -l #2899
+question 18: 	#3101
+question 19:	cut -f 16 chr3_intersect2.txt | sort -u | wc -l #21
+question 20:	wc -l athal_wu_0_A.bed # 218469
+
+

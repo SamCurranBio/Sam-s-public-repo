@@ -1,0 +1,23 @@
+==> all_concatenated_files.txt <==
+a_string
+
+==> apple.txt <==
+a_string
+
+==> file_a.txt <==
+geneA +
+
+==> file_b.txt <==
+geneB +
+
+==> months.txt <==
+september 1 2012
+
+==> peach.txt <==
+a_string
+
+==> seasons.txt <==
+```
+
+==> sorted.txt <==
+september 6 1990
