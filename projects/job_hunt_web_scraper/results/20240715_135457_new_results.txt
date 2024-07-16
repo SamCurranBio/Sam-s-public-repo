@@ -1,0 +1,36 @@
+https://bayer.eightfold.ai/careers?query=&location=Emeryville%2C%20CA&hl=en	engineer	4
+https://boards.greenhouse.io/profluent	data scientist	1
+https://boards.greenhouse.io/profluent	engineer	4
+https://boards.greenhouse.io/profluent	protein	5
+https://boards.greenhouse.io/profluent	scientist	4
+https://boards.greenhouse.io/slingshotbiosciences	scientist	1
+https://fabricgenomics.com/about-fabric-1/careers/	biologist	1
+https://fabricgenomics.com/about-fabric-1/careers/	data scientist	1
+https://fabricgenomics.com/about-fabric-1/careers/	engineer	2
+https://fabricgenomics.com/about-fabric-1/careers/	scientist	2
+https://fireflybiologics.com/careers/	protein	1
+https://fireflybiologics.com/careers/	scientist	3
+https://fireflybiologics.com/careers/	strain	5
+https://jobs.lever.co/arcadiascience	protein	1
+https://jobs.lever.co/arcadiascience	scientist	1
+https://jobs.lever.co/lorentz.bio	scientist	1
+https://jobs.lever.co/prolific-machines	engineer	1
+https://recombia.com/careers/	engineer	4
+https://recombia.com/careers/	scientist	4
+https://www.calicolabs.com/careers/	biologist	4
+https://www.calicolabs.com/careers/	data scientist	8
+https://www.calicolabs.com/careers/	engineer	6
+https://www.calicolabs.com/careers/	scientist	25
+https://www.cellares.com/careers/	engineer	4
+https://www.cellares.com/careers/	scientist	4
+https://www.cellares.com/careers/	strain	5
+https://www.lygos.com/careers	scientist	2
+https://www.mycoworks.com/careers	data scientist	1
+https://www.mycoworks.com/careers	engineer	7
+https://www.mycoworks.com/careers	protein	1
+https://www.mycoworks.com/careers	scientist	2
+https://www.pivotbio.com/open-positions	engineer	5
+https://www.pivotbio.com/open-positions	protein	8
+https://www.pivotbio.com/open-positions	scientist	25
+https://www.pivotbio.com/open-positions	strain	3
+https://www.scribetx.com/careers/	engineer	2

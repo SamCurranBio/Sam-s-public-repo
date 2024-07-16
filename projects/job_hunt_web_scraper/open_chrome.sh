@@ -6,6 +6,19 @@ PHRASES_FILE="phrases.txt"
 RESULTS_DIR="results"
 OUTPUT_FILE="${RESULTS_DIR}/$(date +'%Y%m%d_%H%M%S')_results.tsv"
 
+OPEN_CHROME=false
+
+# Parse command line arguments
+for arg in "$@"; do
+    case $arg in
+        -openchrome)
+            OPEN_CHROME=true
+            shift
+            ;;
+    esac
+done
+
+
 # Function to count occurrences of a phrase in webpage content
 count_occurrences() {
     local url="$1"
@@ -40,6 +53,18 @@ while IFS= read -r url; do
 done < "$WEBPAGES_FILE"
 
 echo "Results saved to $OUTPUT_FILE"
+
+
+
+
+
+
+
+
+
+
+
+
 
 ######################--------this part does the comparing between queryies  ############------
 
@@ -91,6 +116,15 @@ comm_output=$(comm -23 <(sort "$most_recent_file") <(sort "$second_most_recent_f
 if [ -n "$comm_output" ]; then
     echo "Wow, new jobs potentially found! Go get 'em tiger. Adding to $OUTPUT_FILE:"
     echo "$comm_output" >> $OUTPUT_FILE
+    if [ "$OPEN_CHROME" = true ]; then
+    	echo "Opening new result URLs in Google Chrome..."
+    	# Extract unique URLs with new results and open in Chrome
+    	echo "$comm_output" | cut -f1 | sort | uniq | while IFS= read -r url; do
+            echo "Opening $url ..."
+            google-chrome "$url" & # Use "google-chrome" for Linux, "chrome" for Windows, or "open -a 'Google Chrome'" for macOS
+        done
+    fi
+    
 else
     echo "No new queries found between $most_recent_file and $second_most_recent_file. Sorry bud, try tomorrow."
 fi
