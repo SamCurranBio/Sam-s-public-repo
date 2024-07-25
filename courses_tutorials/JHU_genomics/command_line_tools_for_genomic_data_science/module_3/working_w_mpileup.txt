@@ -1,0 +1,10 @@
+samtools mpileup -f ../wu_0.v7.fas sorted_alignments.bam | head -100	#gives data in mpileup format 
+
+samtools mpileup -v -f ../wu_0.v7.fas sorted_alignments.bam | head -100	#gives data in compressed vcf format (can't read it)
+
+samtools mpileup -uv -f ../wu_0.v7.fas sorted_alignments.bam | head -100	#gives data in UNcompressed vcf format 
+
+
+samtools mpileup -uv -f ../wu_0.v7.fas sorted_alignments.bam -o out.txt #this sends to a file (uncompressed) 
+
+

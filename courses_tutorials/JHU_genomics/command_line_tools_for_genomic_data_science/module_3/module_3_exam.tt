@@ -1,0 +1,67 @@
+question 1:	grep -c ">"  wu_0.v7.fas	#7	# correct
+question 2:	grep  ">"  wu_0.v7.fas	#Chr3	# correct
+question 3:	grep  ">"  wu_0.v7.fas	#mitochondria	# correct
+question 4:	ls -l output | wc -l	#6	# correct
+question 5:	bt2	# correct
+question 6:	wc -l *.fastq #divide by 4	#147354	
+question 7:
+
+the end-to-end .sam includes 147354 alignments, and there appear to be no duplications. this is consistent wtih the #of alignments shown in flagstats 
+
+bowtie2 reports the same thing:
+147354 reads; of these:
+  147354 (100.00%) were unpaired; of these:
+    9635 (6.54%) aligned 0 times
+    93780 (63.64%) aligned exactly 1 time
+    43939 (29.82%) aligned >1 times
+
+# try 137719 primary mapped 
+
+question 8: #141044 primary mapped 
+
+
+147354 reads; of these:
+  147354 (100.00%) were unpaired; of these:
+    6310 (4.28%) aligned 0 times
+    84939 (57.64%) aligned exactly 1 time
+    56105 (38.07%) aligned >1 times
+    
+
+
+question 9: #137719 #correct
+question 10: #141044 #correct
+
+question 11:	43939 
+question 12:	56105
+
+question 13:	samtools view end_to_end.sam | cut -f6 | grep -E "I|D" | wc -l #2782
+question 14:	samtools view local.sam | cut -f6 | grep -E "I|D" | wc -l	#2614
+
+# setting up the vcf file
+samtools mpileup -uv -f ../wu_0.v7.fas end_to_end.sorted.bam > end_to_end.mpileup.vcf
+
+
+question 15:	grep -v "#"  end_to_end.mpileup.vcf |  cut -f1 | grep -c "Chr3" #360295
+question 16:	cut -f 4 end_to_end.mpileup.vcf | sort | uniq -c #1150985
+
+######## correct until here 
+question 17:	bcftools view -i 'INFO/DP=20' mpileup_compressed.bcf.gz | grep -v "#" | wc -l #1816
+question 18:	bcftools view -i 'TYPE="indel"' end_to_end.mpileup.vcf |grep -v '#' | wc -l #1972
+question 19:	bcftools view -H -r Chr1:175672 mpileup_compressed.bcf.gz | wc -l
+
+
+#### --generate the variant call file
+bcftools call -mv -Oz mpileup_compressed.bcf -o variant_calls.vcf.gz
+
+
+
+question 20:	bcftools view q20_onward.bcf.gz | grep -v "#"  | cut -f1 | sort | uniq -c #398
+
+question 21:	bcftools view q20_onward.bcf.gz | grep -v "#"  | cut -f4,5 | grep -P 'A\tT' | sort | uniq -c #392	
+question 22:	bcftools view -i 'TYPE="indel"' q20_onward.bcf.gz | grep -v '#' | wc -l	#320	
+
+question 23:	bcftools view -i 'INFO/DP=20' variant_calls.vcf.gz  -Oz -o output_DP20.vcf.gz	#2
+
+
+question 24: bcftools view -r Chr3:11937923 variant_calls.vcf.gz #SNP 
+

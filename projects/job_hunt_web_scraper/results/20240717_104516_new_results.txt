@@ -1,0 +1,7 @@
+https://codexis.pinpointhq.com/#js-careers-jobs-block	engineer	4
+https://codexis.pinpointhq.com/#js-careers-jobs-block	enzyme	4
+https://codexis.pinpointhq.com/#js-careers-jobs-block	protein	2
+https://willowbio.com/careers/	engineer	5
+https://willowbio.com/careers/	enzyme	2
+https://willowbio.com/careers/	scientist	5
+https://willowbio.com/careers/	strain	3
