@@ -1,0 +1,11 @@
+
+[2024-07-25 16:24:33] Beginning TopHat run (v2.0.14)
+-----------------------------------------------
+[2024-07-25 16:24:33] Checking for Bowtie
+		  Bowtie version:	 2.2.5.0
+[2024-07-25 16:24:34] Checking for Bowtie index files (genome)..
+[2024-07-25 16:24:34] Checking for reference FASTA file
+	Warning: Could not find FASTA file ./index/athal_chr_index.fa
+[2024-07-25 16:24:34] Reconstituting reference FASTA file from Bowtie index
+  Executing: /home/sam/anaconda3/envs/module4_env/bin/bowtie2-inspect ./index/athal_chr_index > ./output/tmp/athal_chr_index.fa
+[2024-07-25 16:24:34] Generating SAM header for ./index/athal_chr_index

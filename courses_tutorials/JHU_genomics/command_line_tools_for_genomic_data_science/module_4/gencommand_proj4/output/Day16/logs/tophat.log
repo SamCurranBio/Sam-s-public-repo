@@ -1,0 +1,26 @@
+
+[2024-07-25 16:26:50] Beginning TopHat run (v2.0.14)
+-----------------------------------------------
+[2024-07-25 16:26:50] Checking for Bowtie
+		  Bowtie version:	 2.2.5.0
+[2024-07-25 16:26:50] Checking for Bowtie index files (genome)..
+[2024-07-25 16:26:50] Checking for reference FASTA file
+	Warning: Could not find FASTA file ./index/athal_chr_index.fa
+[2024-07-25 16:26:50] Reconstituting reference FASTA file from Bowtie index
+  Executing: /home/sam/anaconda3/envs/module4_env/bin/bowtie2-inspect ./index/athal_chr_index > ./output/Day16/tmp/athal_chr_index.fa
+[2024-07-25 16:26:50] Generating SAM header for ./index/athal_chr_index
+[2024-07-25 16:26:50] Preparing reads
+	 left reads: min. length=50, max. length=50, 57985 kept reads (0 discarded)
+[2024-07-25 16:26:51] Mapping left_kept_reads to genome athal_chr_index with Bowtie2 
+[2024-07-25 16:26:52] Mapping left_kept_reads_seg1 to genome athal_chr_index with Bowtie2 (1/2)
+[2024-07-25 16:26:52] Mapping left_kept_reads_seg2 to genome athal_chr_index with Bowtie2 (2/2)
+[2024-07-25 16:26:53] Searching for junctions via segment mapping
+[2024-07-25 16:26:53] Retrieving sequences for splices
+[2024-07-25 16:26:53] Indexing splices
+[2024-07-25 16:26:53] Mapping left_kept_reads_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2024-07-25 16:26:54] Mapping left_kept_reads_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2024-07-25 16:26:54] Joining segment hits
+[2024-07-25 16:26:54] Reporting output tracks
+-----------------------------------------------
+[2024-07-25 16:26:56] A summary of the alignment counts can be found in ./output/Day16/align_summary.txt
+[2024-07-25 16:26:56] Run complete: 00:00:05 elapsed

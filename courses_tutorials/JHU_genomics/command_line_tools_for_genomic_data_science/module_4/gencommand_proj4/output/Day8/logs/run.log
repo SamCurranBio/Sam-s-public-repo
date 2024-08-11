@@ -1,0 +1,1 @@
+/home/sam/anaconda3/envs/module4_env/bin/tophat -o ./output ./index/athal_chr_index Day8.fastq clear

@@ -1,0 +1,19 @@
+setup:
+
+tophat [options] <bowtie_index> <reads1[,reads2,...]> [reads1[,reads2,...]] \
+                                    [quals1,[quals2,...]] [quals1[,quals2,...]]
+                                    
+tophat -o ./output ./index/athal_chr_index Day8.fastq  #generates...something 
+
+#alignments 
+question1:output$ samtools view Day8/accepted_hits.bam | cut -f1 | sort |  wc -l	#63845
+question2: #58398
+#of reads
+question3:samtools view Day8/accepted_hits.bam | cut -f1 | sort | uniq | wc -l	#63489
+question4:#	57951
+question5:#	63133
+quesiton6:#	57504
+question7:#	0 #incorrect
+q8:	#0 #incorrect 
+q9:	#63573-63489 = 84
+q10:	#57985-57951=34

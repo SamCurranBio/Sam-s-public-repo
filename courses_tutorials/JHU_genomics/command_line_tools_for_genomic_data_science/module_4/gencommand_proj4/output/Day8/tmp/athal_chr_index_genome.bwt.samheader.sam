@@ -1,0 +1,3 @@
+@HD	VN:1.0	SO:coordinate
+@SQ	SN:4	LN:500000
+@PG	ID:TopHat	VN:2.0.14	CL:/home/sam/anaconda3/envs/module4_env/bin/tophat -o ./output ./index/athal_chr_index Day8.fastq clear

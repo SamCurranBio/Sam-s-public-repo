@@ -1,0 +1,6 @@
+mkdir -p ./output
+
+tophat2 -o ./output -p 10 --max-multihits=10 \
+	-G athal_gemes.gtf \ #provide
+	./index/athal_chr_index \ #provide bowtie index
+	 
